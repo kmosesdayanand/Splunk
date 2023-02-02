@@ -1,4 +1,4 @@
 # Splunk
-                                                                       Index
+                                                           Index
 
 Hi
