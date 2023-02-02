@@ -1,2 +1,1 @@
-# Splunk
-hi moses
+# Splunk - Index
