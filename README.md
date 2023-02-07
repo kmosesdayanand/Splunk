@@ -1,4 +1,4 @@
-# Splunk
+# Splunk Notes
                                                            Index
 
 1.[Index Discovery](https://github.com/kmosesdayanand/Splunk/blob/main/Indexer_Discovery.md)
