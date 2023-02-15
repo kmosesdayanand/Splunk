@@ -27,28 +27,73 @@ splunk edit cluster-config -mode slave -master_uri https://<ip> : <mgmt._port>:<
 
 ### .conf Mode
 
-Master Node ---- server.conf
+#### Master Node ---- server.conf
 
 ```
+
+[general]
+serverName = cm-daya
+pass4SymmKey = $7$I/8C3zpY3QUQu6VPtthuM9vUyU+FcKsPY/L8TAB5rm+pwU5H5ZgnAA==
+
+[sslConfig]
+sslPassword = $7$d89Lzn8swsAMQSAtgaWVdNGfEQQotJH48D4TSUEDHnvcMIwt6LWJ2A==
+
+[lmpool:auto_generated_pool_download-trial]
+description = auto_generated_pool_download-trial
+peers = *
+quota = MAX
+stack_id = download-trial
+
+[lmpool:auto_generated_pool_forwarder]
+description = auto_generated_pool_forwarder
+peers = *
+quota = MAX
+stack_id = forwarder
+
+[lmpool:auto_generated_pool_free]
+description = auto_generated_pool_free
+peers = *
+quota = MAX
+stack_id = free
 
 [clustering]
+cluster_label = cluster1
 mode = manager
-cluster_label = 043BF050-32CF-4649-A70D-B0E79F4B8EE3
-
-[indexer_discovery]
-pass4SymmKey = $7$r/lE0vgDzH6qaj8oJYcOd4fFWKq7ajx7gmRRBGb/wvdw91JzZfnlp+0mG/XO
-polling_rate = 10
-indexerWeightByDiskCapacity = true![image](https://user-images.githubusercontent.com/80450749/219061552-6d6f08b3-7488-4501-88b0-a1fe1e2813d8.png)
 
 ```
 
-Peer Node --- outputs.conf
+####  Peer Node --- outputs.conf
 
 ```
+[general]
+serverName = idx-daya-2
+pass4SymmKey = $7$XENHUAEVyViggLGGfR6LYA4qJpUtBFYNBXcbtfmUt3Tjt3vhQ4NAuQ==
+
+[sslConfig]
+sslPassword = $7$BGebc1aQ41zGYIcFBJP+bXxMocT4s53OuT+dJFY7SpniK+fyXVmA4Q==
+
+[lmpool:auto_generated_pool_download-trial]
+description = auto_generated_pool_download-trial
+peers = *
+quota = MAX
+stack_id = download-trial
+
+[lmpool:auto_generated_pool_forwarder]
+description = auto_generated_pool_forwarder
+peers = *
+quota = MAX
+stack_id = forwarder
+
+[lmpool:auto_generated_pool_free]
+description = auto_generated_pool_free
+peers = *
+quota = MAX
+stack_id = free
 
 [replication_port://8080]
+
 [clustering]
-master_uri = https://10.160.0.14:8089
+master_uri = <cluster_master_ip>:8089
 mode = peer
 
 ```
