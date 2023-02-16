@@ -255,7 +255,7 @@ shcluster_label = shcluster1
 9. Click Install.
 10. If this is the first Enterprise license that you are installing on the license manager, you must restart Splunk Enterprise.
 
-## Configuration for License Peers
+#### Configuration for License Peers
 11. Now Go to **License Peer**.
 12. Log into Splunk Web and navigate to Settings > Licensing.
 13. Click Change to Peer.
