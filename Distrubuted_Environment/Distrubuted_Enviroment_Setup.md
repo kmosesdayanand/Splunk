@@ -283,7 +283,11 @@ To install a license for a standalone instance of Splunk Enterprise:
 >The Notes field is only available for licenses installed in an Enterprise license group.
 
 
+![image](https://user-images.githubusercontent.com/80450749/219441080-82997a07-1e41-4321-b402-32f082bd2199.png)
 
+![image](https://user-images.githubusercontent.com/80450749/219441116-9f429a3f-deca-41b0-89c1-c6c90617e101.png)
+
+![image](https://user-images.githubusercontent.com/80450749/219441161-ece81de4-3a0c-4321-8b0f-87f361f2be8b.png)
 
 
 
