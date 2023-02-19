@@ -1,8 +1,6 @@
 # Splunk Notes
 
-```
-                              Index
-```
+## Index
 
 1.Distrubuted Environment
 
