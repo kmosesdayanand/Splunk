@@ -11,7 +11,7 @@
 Execute the following on Master node.
 
 ```
-./splunk edit cluster-config -mode master –replication_factor <number> -search factor <number> -secret <string> -cluster_label <string>
+./splunk edit cluster-config -mode master -replication_factor <number> -search_factor <number> -secret <string> -cluster_label <string>
 
 ```
 
@@ -19,7 +19,7 @@ Execute the following on Peer Node.
 
 ```
 
-splunk edit cluster-config -mode slave -master_uri https://<ip> : <mgmt._port>:<host name>:<mgmt_port>  replication_port <port> -secret <string> -cluster label <string>
+splunk edit cluster-config -mode slave -master_uri https://<ip>:<port> replication_port <port> -secret <string> -cluster label <string>
 
 ```
 
