@@ -1,0 +1,88 @@
+	1. First we have to be a admin in order to integrate with Splunk. We can integrate with a non-admin account if we have a "Dev Console". 
+	2. We need to create a app in "Dev console" of Box account.
+	
+	
+	
+	
+	
+	
+	
+	
+	3. Create a new app here as follows
+	
+	
+	
+	
+	
+	
+	
+	4. Select the appropriate way of authentication.
+	5. Name the app as you wish, in my case I am giving Splunk
+	6. Click on create app.
+	
+	
+	
+	
+	
+	7. Please make sure your screen looks like this.
+	8. Now copy the Client ID and Client Secret.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	9. Install Splunk add-on for Box in your splunk instance.
+	10. Open the add-on.
+	11. Add box account credentials in the configuration tab as shown below.
+	
+	
+	
+	
+	
+	
+	
+	
+	12. Enter you client ID and client secret and specify some unique name.
+	13. Now add the input, and click add.
+	14. A pop up will appear showing an error, which will contain a url as follows
+	
+	
+	
+	
+	
+	
+	15. Copy the highlighted url and add it to the redirect url in box app.
+	
+	
+	
+	
+	
+	16. Once you add the input after adding the url you should be able to see the above window, now grant access and close the windows.
+	
+	
+	
+	
+	
+	17. Once you save the configuration you should add the inputs in the Splunk add-on.
+	
+	
+	
+	
+	
+	
+	
+	18. Add the inputs to box account, from location shown in the above screenshot.
+	19. After you add inputs, you should be able to see the box logs in splunk.
+	20. "This is the way"
+	
+	
+	
+	
