@@ -28,3 +28,13 @@
 ```
 splunk edit cluster-config -cluster_label <CLUSTER LABEL>
 ```
+
+## Monitoring Console
+![image](https://github.com/kmosesdayanand/Splunk/assets/80450749/b54498f4-4966-4947-9bd1-d7d93a9c99df)
+
+
+
+## Indexer Clustering console 
+![image](https://github.com/kmosesdayanand/Splunk/assets/80450749/a0690ae4-6393-443a-98b1-a726082cc994)
+
+
