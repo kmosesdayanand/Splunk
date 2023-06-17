@@ -1,6 +1,7 @@
 <ul>
 <li>First we have to be a admin in order to integrate with Splunk. We can integrate with a non-admin account if we have a "Dev Console".</li> 
-<li>We need to create a app in "Dev console" of Box account. To do so we need to login to box using developer console link.(Just Google "Box developer console")</li> 
+<li>We need to create a app in "Dev console" of Box account. To do so we need to login to box using developer console link.(Just Google "Box developer console")</li>
+	
 	
 <img width="960" alt="Untitled" src="https://user-images.githubusercontent.com/80450749/236737598-24722648-6cd0-4243-95df-89772a3822d2.png">
 
