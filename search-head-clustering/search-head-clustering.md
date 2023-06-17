@@ -94,6 +94,11 @@ Run on each search head.
 ./splunk edit cluster-config -mode searchhead -manager_uri https://10.128.0.15:8089  -auth admin:splunk1234
 ```
 
+## Cluster Label
+```
+splunk edit shcluster-config -shcluster_label <CLUSTER LABEL>
+```
+
 Reference: https://docs.splunk.com/Documentation/Splunk/9.0.2/DistSearch/Connectclustersearchheadstosearchpeers
 
 Reference: https://docs.splunk.com/Documentation/Splunk/9.0.2/DistSearch/SHCdeploymentoverview
