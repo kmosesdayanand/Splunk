@@ -24,3 +24,7 @@
 ```
 /opt/splunk/bin/splunk edit cluster-config -mode searchhead -site site2 -manager_uri https://<cluster_master_ip>:8089
 ```
+## Cluster Label
+```
+splunk edit cluster-config -cluster_label <CLUSTER LABEL>
+```
