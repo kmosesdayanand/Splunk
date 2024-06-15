@@ -4,14 +4,14 @@
 splunk_home="/opt/splunk"
 admin_user="admin"
 admin_password="splunk1234"
-log_folder="/opt/splunk/pubnew/rebuild_logs"
+log_folder="/opt/splunk/rebuild_logs"
 log_file="$log_folder/logfile_$(date +"%Y%m%d_%H%M%S").txt"
-email_cc="splunker@positka.com"
-from_email="test@positka.com"
+email_cc="splunker@test.com"
+from_email="test_rebuild@test.com"
 archive_path="/opt/splunk/Publicis logs/myfrozenarchive"
 
 # Global variables for input parameters
-index_name="rtest-2"
+index_name="cisco_asa"
 month="1"
 year="2024"
 
@@ -105,7 +105,7 @@ else
 fi
 
 # Loop through indexers and check for matching buckets
-for indexer in "$archive_path"/indexer*; do
+for indexer in "$archive_path"/*; do
     index_folder="$indexer/$index_name/frozendb"
     if [ ! -d "$index_folder" ]; then
         log INFO "Index folder $index_folder not found on $indexer. Skipping."
