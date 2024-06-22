@@ -54,7 +54,7 @@ rebuild_bucket() {
     log INFO "Rebuilding bucket: $bucket_path"
     local result
     if result="$("$splunk_home/bin/splunk" rebuild "$bucket_path" 2>&1)"; then
-        log SUCCESS "Bucket $bucket_path rebuilt successfully."
+        log UCCESS "Bucket $bucket_path rebuilt successfully."
     else
         log FAILURE "Failed to rebuild bucket: $bucket_path. Error: $result"
         script_success=false
