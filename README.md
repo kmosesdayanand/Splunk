@@ -52,7 +52,7 @@ Additional Notes: Any further considerations or troubleshooting tips.
 
 # Contributing
 
-We welcome contributions from the Splunk community! If you have developed a useful Splunk resource, feel free to submit a pull request.  Please refer to the contribution guidelines specific to each resource type (e.g., custom search commands might have different formatting requirements than macros).
+We welcome contributions from the Splunk community! If you have developed a useful Splunk resource, feel free to submit a pull request.
 
 
 # Stay Updated
