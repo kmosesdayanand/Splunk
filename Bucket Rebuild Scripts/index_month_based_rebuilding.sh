@@ -39,7 +39,7 @@ copy_buckets_with_progress() {
     local source_folder="$1"
     local destination_folder="$2"
     log INFO "Copying buckets from $source_folder to $destination_folder"
-    if rsync -a --recursive --exclude='rb_*' --ignore-existing "$source_folder" "$destination_folder" 2>&1 >> "$log_file"; then
+    if rsync -a --recursive --exclude='rb_*' --ignore-existing "$source_folder" "$destination_folder" >> "$log_file" 2>&1; then
         log SUCCESS "Successfully copied frozen buckets from $source_folder to $destination_folder."
     else
         log FAILURE "Failed to copy frozen buckets from $source_folder to $destination_folder. See log for details."
@@ -54,7 +54,7 @@ rebuild_bucket() {
     log INFO "Rebuilding bucket: $bucket_path"
     local result
     if result="$("$splunk_home/bin/splunk" rebuild "$bucket_path" 2>&1)"; then
-        log UCCESS "Bucket $bucket_path rebuilt successfully."
+        log SUCCESS "Bucket $bucket_path rebuilt successfully."
     else
         log FAILURE "Failed to rebuild bucket: $bucket_path. Error: $result"
         script_success=false
