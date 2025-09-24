@@ -1,0 +1,8 @@
+# Allow splunkfwd to manage only SplunkForwarder.service via systemctl (no password)
+Cmnd_Alias SPLUNK_CMDS = /usr/bin/systemctl start SplunkForwarder, \
+                         /usr/bin/systemctl stop SplunkForwarder, \
+                         /usr/bin/systemctl restart SplunkForwarder, \
+                         /usr/bin/systemctl status SplunkForwarder
+
+splunkfwd ALL=(root) NOPASSWD: SPLUNK_CMDS
+
