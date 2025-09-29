@@ -1,7 +1,7 @@
 #!/bin/bash
 # Splunk Universal Forwarder Installation Script (with sudoers-fix)
 # Must run as root. Ensures /etc/sudoers.d files have correct perms before installing fragment.
-# Author: Moses Dayanand + modifications by Jarvis
+# Author: Moses Dayanand 
 
 set -euo pipefail
 
@@ -101,7 +101,7 @@ else
     echo "[STEP 6] No sudoers fragment to install — skipping."
 fi
 
-echo "[STEP 7] Starting Splunk as splunkfwd user (with seeded credentials)..."
+echo "[STEP 7] Starting Splunk as splunkfwd user ..."
 sudo -u splunkfwd "$SPLUNK_HOME/bin/splunk" start --accept-license --answer-yes
 
 echo "[STEP 8] Waiting 60 seconds for Splunk to stabilize..."
